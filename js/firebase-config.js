@@ -1,6 +1,5 @@
 //js/firebase-config.js
 
-// Firebaseの設定情報（自分のプロジェクトのものに書き換えてください）
 const firebaseConfig = {
   apiKey: "AIzaSyBzl6UB-bN7BI58EZc1Mm2eTTYRDKWEnNo",
   authDomain: "dosokai-kissa.firebaseapp.com",
