@@ -101,5 +101,20 @@
   <script src="js/festivalModal.js"></script>
   <script src="js/favorite.js"></script>
   <script src="js/stallCalc.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script>
+  const statusEl = document.getElementById('status-display');
+
+  // 初期読み込みとリアルタイム監視
+  database.ref('status').on('value', (snapshot) => {
+    const val = snapshot.val();
+    if (val === 'green') statusEl.textContent = '空いてる';
+    else if (val === 'yellow') statusEl.textContent = 'やや混雑';
+    else if (val === 'red') statusEl.textContent = '混雑中';
+    else statusEl.textContent = '取得エラー';
+  });
+  </script>
 </body>
 </html>
