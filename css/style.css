@@ -721,3 +721,43 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+#ghost-error {
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+  font-family: sans-serif;
+}
+#ghost-error h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#ghost-secret {
+  margin-top: 2rem;
+  width: 100px;
+  height: 100px;
+  opacity: 0.01;
+  margin: 0 auto;
+}
+
+#staff-login {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#staff-login form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+#staff-login input {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: 200px;
+}
