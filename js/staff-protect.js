@@ -128,7 +128,7 @@
     const ghostSecret = document.getElementById('ghost-secret');
     ghostSecret.addEventListener('click', showLoginForm);
     ghostSecret.addEventListener('touchstart', showLoginForm);
-    });
+    
   } else {
     // ログイン済：DOMが消えてる可能性あるので再構築
     if (!document.querySelector('header')) {
