@@ -125,8 +125,9 @@
     `;
     body.prepend(ghost);
 
-    document.getElementById('ghost-secret').addEventListener('click', () => {
-      showLoginForm();
+    const ghostSecret = document.getElementById('ghost-secret');
+    ghostSecret.addEventListener('click', showLoginForm);
+    ghostSecret.addEventListener('touchstart', showLoginForm);
     });
   } else {
     // ログイン済：DOMが消えてる可能性あるので再構築
