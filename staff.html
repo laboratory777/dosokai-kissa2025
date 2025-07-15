@@ -4,24 +4,6 @@
   <meta charset="UTF-8">
   <title>スタッフ用管理ページ</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .admin {
-      max-width: 500px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #f5f5f5;
-      border-radius: 8px;
-    }
-    .admin select, .admin button {
-      font-size: 1rem;
-      margin: 1rem 0;
-      width: 100%;
-      padding: 0.6rem;
-    }
-    #output {
-     resize: vertical;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -38,18 +20,10 @@
     <button onclick="updateStatus()">混雑状況を反映</button>
   </section>
 
-<!-- 末尾に追加 -->
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 <script src="js/firebase-config.js"></script>
-<script>
-function updateStatus() {
-  const status = document.getElementById('statusSelect').value;
-  database.ref('status').set(status)
-    .then(() => alert('混雑状況を反映しました'))
-    .catch((error) => alert('送信エラー:' + error));
-}
-</script>
-
+<script src="js/staff-protect.js"></script>
+<script src="js/staff-protect2.js"></script>
 </body>
 </html>
