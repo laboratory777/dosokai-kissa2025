@@ -721,7 +721,6 @@ footer {
   opacity: 1;
   transform: translateY(0);
  }
-}
 
 .admin {
   max-width: 500px;
@@ -784,4 +783,5 @@ footer {
   margin: 1rem auto;
   padding: 0.5rem;
   width: 200px;
+ }
 }
