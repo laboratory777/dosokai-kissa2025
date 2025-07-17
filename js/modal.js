@@ -41,9 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <button class="modal-close" aria-label="閉じる">
           <img src="image/Close.svg" alt="閉じる" class="modal-close-icon">
           </button>
-          <img src="${detail.img}" alt="${text}">
+          <img src="${detail.img}" alt="${text}" class="menu-img">
           <p class="status-note">※画像はイメージです。</p>
-          <p>${detail.text}</p>
+          <p class="menu-title">${text}</p>
+          <p class="menu-desc">${detail.text}</p>
         </div>
       `;
       document.body.appendChild(modal);
