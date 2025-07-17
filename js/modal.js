@@ -38,7 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.className = "modal-overlay";
       modal.innerHTML = `
         <div class="modal-box">
-          <button class="modal-close" aria-label="閉じる">×</button>
+          <button class="modal-close" aria-label="閉じる">
+          <img src="image/Close.svg" alt="閉じる" class="modal-close-icon">
+          </button>
           <img src="${detail.img}" alt="${text}">
           <p class="status-note">※画像はイメージです。</p>
           <p>${detail.text}</p>
