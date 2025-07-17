@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const modal = document.createElement("div");
       modal.className = "modal-overlay";
       modal.innerHTML = `
-        <div class="modal-box">
+        <div class="modal-box" id="menuModal">
           <button class="modal-close" aria-label="閉じる">
           <img src="image/Close.svg" alt="閉じる" class="modal-close-icon">
           </button>
